@@ -1,0 +1,15 @@
+{
+  "name": "NewTab for Chrome",
+  "version": "0.5",
+  "manifest_version": 2,
+  "description": "A custom new tab for Chrome",
+  "browser_action": {
+    "default_icon": "icon/icon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "http://api.newtab.com"
+  ]
+}

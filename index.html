@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新标签页</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 容器， 居中 -->
+    <div class="container">
+
+        <!-- 顶部菜单 -->
+        <div class="menu">
+            <img src="img/logo.svg" alt="logo" width="46px" height="46px">
+            <ul>
+                <li><a href="javascript:void(0);" class="active">快速开始</a></li>
+                <li><a href="javascript:void(0);">书签管理</a></li>
+            </ul>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="search">
+            <input type="text" placeholder="上网从这里开始" id="search-text" autofocus>
+            <button onclick="search();">搜索</button>
+        </div>
+
+        <!-- 网址导航 -->
+        <div class="nav">
+            <div class="nav-tag">
+                <ul>
+                    <li><a href="javascript:void(0);" class="active">常用</a></li>
+                    <li><a href="javascript:void(0);">娱乐</a></li>
+                    <li><a href="javascript:void(0);">学习</a></li>
+                    <li><a href="javascript:void(0);">生活</a></li>
+                    <li><a href="javascript:void(0);">技术</a></li>
+                    <li><a href="javascript:void(0);">设计</a></li>
+                </ul>
+            </div>
+
+            <!-- 常用 -->
+            <div class="nav-content active">
+                <ul>
+                    <li>热门</li>
+                    <li><a href="https://www.baidu.com">百度</a></li>
+                    <li><a href="https://www.google.com">谷歌</a></li>
+                    <li><a href="https://cn.bing.com">必应</a></li>
+                    <li><a href="https://www.sougou.com">搜狗</a></li>
+                    <li><a href="https://www.toutiao.com">今日头条</a></li>
+                    <li><a href="https://jiandan.net">煎蛋</a></li>
+                    <li><a href="http://www.dgtle.com">数字尾巴</a></li>
+                </ul>
+                <ul>
+                    <li>社交</li>
+                    <li><a href="https://www.weibo.com">微博</a></li>
+                    <li><a href="https://tieba.baidu.com">贴吧</a></li>
+                    <li><a href="https://www.zhihu.com">知乎</a></li>
+                    <li><a href="https://www.douban.com">豆瓣</a></li>
+                    <li><a href="https://www.v2ex.com">V2EX</a></li>
+                    <li><a href="https://www.jianshu.com">简书</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                </ul>
+                <ul>
+                    <li>咨询</li>
+                    <li><a href="https://www.163.com">网易</a></li>
+                    <li><a href="http://www.qq.com">腾讯</a></li>
+                    <li><a href="http://www.sina.com.cn">新浪</a></li>
+                    <li><a href="http://www.sohu.com">搜狐</a></li>
+                    <li><a href="http://www.ifeng.com">凤凰网</a></li>
+                    <li><a href="http://www.people.com.cn">人民网</a></li>
+                    <li><a href="http://xinhuanet.com">新华网</a></li>
+                </ul>
+                <ul>
+                    <li>购物</li>
+                    <li><a href="https://www.taobao.com">淘宝</a></li>
+                    <li><a href="https://www.jd.com">京东</a></li>
+                    <li><a href="https://www.amazon.cn">亚马逊</a></li>
+                    <li><a href="https://www.suning.com">苏宁易购</a></li>
+                    <li><a href="https://you.163.com">网易严选</a></li>
+                    <li><a href="https://www.mi.com">小米商城</a></li>
+                    <li><a href="https://www.smzdm.com">什么值得买</a></li>
+                </ul>
+                <ul>
+                    <li>视频</li>
+                    <li><a href="https://v.qq.com">腾讯视频</a></li>
+                    <li><a href="https://www.youku.com">优酷</a></li>
+                    <li><a href="https://www.iqiyi.com">爱奇艺</a></li>
+                    <li><a href="https://www.bilibili.com">哔哩哔哩</a></li>
+                    <li><a href="https://www.panda.tv/">熊猫直播</a></li>
+                    <li><a href="https://www.douyu.com">斗鱼直播</a></li>
+                    <li><a href="https://www.youtube.com">YouTube</a></li>
+                </ul>
+                <ul>
+                    <li>工作</li>
+                    <li><a href="https://cn.linkedin.com">领英</a></li>
+                    <li><a href="https://www.lagou.com">拉勾网</a></li>
+                    <li><a href="https://www.zhaopin.com">智联招聘</a></li>
+                    <li><a href="https://www.51job.com/">前程无忧</a></li>
+                    <li><a href="http://www.yingjiesheng.com">应届生</a></li>
+                    <li><a href="https://maimai.cn">脉脉</a></li>
+                    <li><a href="https://www.v2ex.com/?tab=jobs">酷工作</a></li>
+                </ul>
+                <ul>
+                    <li>生活</li>
+                    <li><a href="https://www.meituan.com">美团</a></li>
+                    <li><a href="https://www.dianping.com">大众点评</a></li>
+                    <li><a href="https://www.ctrip.com">携程</a></li>
+                    <li><a href="https://www.qunar.com">去哪儿</a></li>
+                    <li><a href="https://www.alitrip.com">飞猪</a></li>
+                    <li><a href="https://kyfw.12306.cn/otn/index/init">12306</a></li>
+                    <li><a href="https://www.mafengwo.cn">马蜂窝</a></li>
+                </ul>
+                <ul>
+                    <li>便捷</li>
+                    <li><a href="https://fanyi.baidu.com">词典翻译</a></li>
+                    <li><a href="http://www.weather.com.cn/live/">天气预报</a></li>
+                    <li><a href="https://www.kuaidi100.com">快递查询</a></li>
+                    <li><a href="https://cn.office-converter.com/">在线转换</a></li>
+                    <li><a href="https://send.firefox.com/">临时网盘</a></li>
+                    <li><a href="https://wx.qq.com/">网页微信</a></li>
+                    <li><a href="https://mail.qq.com/">QQ邮箱</a></li>
+                </ul>
+            </div>
+
+            <!-- 娱乐 -->
+            <div class="nav-content">
+                <ul>
+                    <li>发现</li>
+                    <li><a href="https://jiandan.net">煎蛋</a></li>
+                    <li><a href="https://www.guokr.com/">果壳网</a></li>
+                    <li><a href="https://www.duitang.com/">堆糖</a></li>
+                    <li><a href="https://www.qiushibaike.com/">糗事百科</a></li>
+                    <li><a href="http://baozou.com/">暴走漫画</a></li>
+                    <li><a href="http://www.budejie.com/">百思不得姐</a></li>
+                    <li><a href="http://www.qdaily.com/">好奇心日报</a></li>
+                </ul>
+                <ul>
+                    <li>影视</li>
+                    <li><a href="https://v.qq.com">腾讯视频</a></li>
+                    <li><a href="https://www.youku.com">优酷</a></li>
+                    <li><a href="https://www.iqiyi.com">爱奇艺</a></li>
+                    <li><a href="http://www.le.com/">乐视视频</a></li>
+                    <li><a href="https://www.mgtv.com/">芒果TV</a></li>
+                    <li><a href="http://tv.cctv.com/">央视网</a></li>
+                    <li><a href="https://www.youtube.com">YouTube</a></li>
+                </ul>
+                <ul>
+                    <li>直播</li>
+                    <li><a href="https://www.douyu.com/">斗鱼直播</a></li>
+                    <li><a href="https://www.panda.tv/">熊猫直播</a></li>
+                    <li><a href="https://www.yy.com/">YY直播</a></li>
+                    <li><a href="https://www.huya.com/">虎牙直播</a></li>
+                    <li><a href="http://www.huajiao.com/">花椒直播</a></li>
+                    <li><a href="https://egame.qq.com/">企鹅电竞</a></li>
+                    <li><a href="https://www.twitch.tv/">Twitch</a></li>
+                </ul>
+                <ul>
+                    <li>动漫</li>
+                    <li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
+                    <li><a href="http://www.acfun.cn/">AcFun</a></li>
+                    <li><a href="http://www.dilidili.wang/">嘀哩嘀哩</a></li>
+                    <li><a href="https://bcy.net/">半次元</a></li>
+                    <li><a href="https://manhua.163.com/">网易漫画</a></li>
+                    <li><a href="http://u17.com/">有妖气</a></li>
+                    <li><a href="https://zh.moegirl.org/Mainpage">萌娘百科</a></li>
+                </ul>
+                <ul>
+                    <li>游戏</li>
+                    <li><a href="https://store.steampowered.com/">Steam</a></li>
+                    <li><a href="https://www.gamersky.com/">游民星空</a></li>
+                    <li><a href="http://www.tgbus.com/">口袋巴士</a></li>
+                    <li><a href="https://www.17173.com/">17173</a></li>
+                    <li><a href="http://www.duowan.com/">多玩游戏</a></li>
+                    <li><a href="https://www.3dmgame.com/">3DMGAME</a></li>
+                    <li><a href="http://www.66rpg.com/">橙光游戏</a></li>
+                </ul>
+                <ul>
+                    <li>音乐</li>
+                    <li><a href="https://music.163.com/">网易云音乐</a></li>
+                    <li><a href="https://www.xiami.com/">虾米音乐</a></li>
+                    <li><a href="https://y.qq.com/">QQ音乐</a></li>
+                    <li><a href="https://douban.fm/">豆瓣FM</a></li>
+                    <li><a href="https://www.ximalaya.com/">喜马拉雅FM</a></li>
+                    <li><a href="http://www.yinyuetai.com/">音悦Tai</a></li>
+                    <li><a href="http://5sing.kugou.com/index.html">5sing原创</a></li>
+                </ul>
+                <ul>
+                    <li>体育</li>
+                    <li><a href="http://sports.qq.com/">腾讯体育</a></li>
+                    <li><a href="http://sports.163.com/">网易体育</a></li>
+                    <li><a href="http://sports.sina.com.cn/">新浪体育</a></li>
+                    <li><a href="http://sports.cctv.com/">央视体育</a></li>
+                    <li><a href="http://www.lesports.com/">乐视体育</a></li>
+                    <li><a href="https://www.zhibo8.cc/">直播吧</a></li>
+                    <li><a href="https://www.hupu.com/">虎扑</a></li>
+                </ul>
+                <ul>
+                    <li>小说</li>
+                    <li><a href="https://www.qidian.com/">起点中文网</a></li>
+                    <li><a href="http://www.zongheng.com/">纵横中文网</a></li>
+                    <li><a href="https://www.hongxiu.com/">红袖添香</a></li>
+                    <li><a href="https://read.douban.com/">豆瓣阅读</a></li>
+                    <li><a href="http://yuedu.163.com/">网易云阅读</a></li>
+                    <li><a href="http://www.jingyu.com/">鲸鱼阅读</a></li>
+                    <li><a href="http://pianke.me/">片刻</a></li>
+                </ul>
+            </div>
+
+            <!-- 学习 -->
+            <div class="nav-content">
+                <ul>
+                    <li>课程</li>
+                    <li><a href="https://open.163.com/">网易公开课</a></li>
+                    <li><a href="https://study.163.com/">网易云课堂</a></li>
+                    <li><a href="https://ke.qq.com/">腾讯课堂</a></li>
+                    <li><a href="https://www.icourse163.org/">中国大学MOOC</a></li>
+                    <li><a href="https://www.imooc.com/">慕课网</a></li>
+                    <li><a href="http://www.jikexueyuan.com/">极客学院</a></li>
+                    <li><a href="http://www.icourses.cn/">爱课程</a></li>
+                </ul>
+                <ul>
+                    <li>文库</li>
+                    <li><a href="https://wenku.baidu.com/">百度文库</a></li>
+                    <li><a href="http://www.doc88.com/">道客巴巴</a></li>
+                    <li><a href="http://www.docin.com/">豆丁网</a></li>
+                    <li><a href="http://ishare.iask.sina.com.cn/">爱问共享资料</a></li>
+                    <li><a href="http://www.360doc.com/">360doc</a></li>
+                    <li><a href="https://wenku.lingfengyun.com/">凌风云文库</a></li>
+                    <li><a href="http://www.mbalib.com/">MBA智库</a></li>
+                </ul>
+                <ul>
+                    <li>学术</li>
+                    <li><a href="https://scholar.google.com/">谷歌学术</a></li>
+                    <li><a href="http://xueshu.baidu.com/">百度学术</a></li>
+                    <li><a href="https://cn.bing.com/academic">必应学术</a></li>
+                    <li><a href="http://www.cnki.net/">中国知网</a></li>
+                    <li><a href="http://www.wanfangdata.com.cn/">万方数据</a></li>
+                    <li><a href="http://www.cqvip.com/">维普网</a></li>
+                    <li><a href="http://www.oalib.com/">OALib</a></li>
+                </ul>
+                <ul>
+                    <li>词典</li>
+                    <li><a href="http://hd.cnki.net/kxhd">汉语词典</a></li>
+                    <li><a href="https://dictionary.cambridge.org/zhs/">剑桥词典</a></li>
+                    <li><a href="https://www.collinsdictionary.com/zh/">柯林斯词典</a></li>
+                    <li><a href="https://www.youdao.com/">有道词典</a></li>
+                    <li><a href="http://www.zdic.net/">汉典</a></li>
+                    <li><a href="https://cjjc.weblio.jp/">日中辞典</a></li>
+                    <li><a href="https://zh.dict.naver.com/">韩中词典</a></li>
+                </ul>
+                <ul>
+                    <li>资讯</li>
+                    <li><a href="http://edu.qq.com/">腾讯教育</a></li>
+                    <li><a href="http://learning.sohu.com/">搜狐教育</a></li>
+                    <li><a href="http://www.163.com/">新浪教育</a></li>
+                    <li><a href="http://www.eol.cn/">中国教育在线</a></li>
+                    <li><a href="http://www.xdf.cn/">新东方</a></li>
+                    <li><a href="http://www.hjenglish.com/">沪江英语</a></li>
+                    <li><a href="https://www.51test.net/">无忧考网</a></li>
+                </ul>
+                <ul>
+                    <li>模考</li><li><a href="http://www.51mokao.com/">我要模考</a></li>
+                    <li><a href="http://www.kmf.com/">考满分留学</a></li>
+                    <li><a href="https://leetcode-cn.com/">LeetCode</a></li>
+                    <li><a href="http://www.chinaacc.com/tiku/">中华会计网校</a></li>
+                    <li><a href="https://www.typing.com/student">打字练习</a></li>
+                    <li><a href="http://www.jxedt.com/">驾校一点通</a></li>
+                    <li><a href="http://www.jiakaobaodian.com/">驾考宝典</a></li>
+                </ul>
+                <ul>
+                    <li>便捷</li><li><a href="http://www.duolingo.cn/">多邻国</a></li>
+                    <li><a href="https://www.shanbay.com/">扇贝</a></li>
+                    <li><a href="http://www.baicizhan.com/">百词斩</a></li>
+                    <li><a href="http://www.51voa.com/">51VOA</a></li>
+                    <li><a href="https://smallpdf.com/cn">在线PDF</a></li>
+                    <li><a href="http://webdemo.myscript.com/">公式字符</a></li>
+                    <li><a href="https://www.wolframalpha.com/">Wolfram Alpha</a></li>
+                </ul>
+                <ul>
+                    <li>成绩</li>
+                    <li><a href="https://www.chsi.com.cn/cet/">英语四六级</a></li>
+                    <li><a href="http://hainan.cltt.org/web/login/pscp01001.aspx">普通话水平</a></li>
+                    <li><a href="http://60.208.116.167:81/pas/querycert.jsp">会计从业资格</a></li>
+                    <li><a href="http://ntce.neea.edu.cn/html1/folder/1508/211-1.htm?sid=660">教师资格</a></li>
+                    <li><a href="http://zscx.neea.edu.cn/html1/folder/1508/211-1.htm?sid=300">计算机等级</a></li>
+                    <li><a href="http://ielts.etest.edu.cn/">雅思</a></li>
+                    <li><a href="http://toefl.etest.net.cn/cn/">托福</a></li>
+                </ul>
+            </div>
+
+            <!-- 生活 -->
+            <div class="nav-content">
+                <ul>
+                    <li>出行</li><li>
+                    <a href="https://www.meituan.com/" target="_blank">美团</a></li>
+                    <li><a href="https://www.ctrip.com/" target="_blank">携程</a></li>
+                    <li><a href="https://www.qunar.com/" target="_blank">去哪儿</a></li>
+                    <li><a href="https://www.alitrip.com/" target="_blank">飞猪</a></li>
+                    <li><a href="http://www.tuniu.com/" target="_blank">途牛</a></li>
+                    <li><a href="https://kyfw.12306.cn/otn/index/init" target="_blank">12306</a></li>
+                    <li><a href="https://www.mafengwo.cn/" target="_blank">马蜂窝</a></li>
+                </ul>
+                <ul>
+                    <li>美食</li>
+                    <li><a href="http://www.xiachufang.com/" target="_blank">下厨房</a></li>
+                    <li><a href="https://www.meishichina.com/" target="_blank">美食天下</a></li>
+                    <li><a href="https://www.douguo.com/" target="_blank">豆果美食</a></li>
+                    <li><a href="http://chihe.sohu.com/" target="_blank">搜狐美食</a></li>
+                    <li><a href="https://www.xinshipu.com/" target="_blank">心食谱</a></li>
+                    <li><a href="http://www.chinacaipu.com/" target="_blank">中华菜谱网</a></li>
+                    <li><a href="http://www.meishij.net/" target="_blank">美食杰</a></li>
+                </ul>
+                <ul>
+                    <li>房产</li>
+                    <li><a href="http://www.fang.com/" target="_blank">房天下</a></li>
+                    <li><a href="http://www.lianjia.com/" target="_blank">链家</a></li>
+                    <li><a href="http://www.fangdd.com/" target="_blank">房多多</a></li>
+                    <li><a href="http://www.anjuke.com/" target="_blank">安居客</a></li>
+                    <li><a href="http://house.qq.com/" target="_blank">腾讯房产</a></li>
+                    <li><a href="https://house.focus.cn/" target="_blank">搜狐焦点</a></li>
+                    <li><a href="http://www.leju.com/" target="_blank">乐居</a></li>
+                </ul>
+                <ul>
+                    <li>汽车</li>
+                    <li><a href="http://www.autohome.com.cn/" target="_blank">汽车之家</a></li>
+                    <li><a href="http://www.pcauto.com.cn/" target="_blank">太平洋汽车</a></li>
+                    <li><a href="http://www.bitauto.com/" target="_blank">易车网</a></li>
+                    <li><a href="http://www.xcar.com.cn/" target="_blank">爱卡汽车</a></li>
+                    <li><a href="http://auto.163.com/" target="_blank">网易汽车</a></li>
+                    <li><a href="http://auto.sina.com.cn/" target="_blank">新浪汽车</a></li>
+                    <li><a href="http://auto.sohu.com/" target="_blank">搜狐汽车</a></li>
+                </ul>
+                <ul>
+                    <li>财经</li>
+                    <li><a href="http://www.eastmoney.com/" target="_blank">东方财富</a></li>
+                    <li><a href="http://www.yicai.com/" target="_blank">第一财经</a></li>
+                    <li><a href="http://finance.ifeng.com/" target="_blank">凤凰财经</a></li>
+                    <li><a href="http://money.163.com/" target="_blank">网易财经</a></li>
+                    <li><a href="http://www.hexun.com/" target="_blank">和讯财经</a></li>
+                    <li><a href="https://xueqiu.com/" target="_blank">雪球</a></li>
+                    <li><a href="http://guba.eastmoney.com/" target="_blank">股吧</a></li>
+                </ul>
+                <ul>
+                    <li>时尚</li>
+                    <li><a href="https://www.pclady.com.cn/" target="_blank">太平洋时尚</a></li>
+                    <li><a href="http://www.rayli.com.cn/" target="_blank">瑞丽网</a></li>
+                    <li><a href="http://www.meilishuo.com/" target="_blank">美丽说</a></li>
+                    <li><a href="http://www.mogujie.com/" target="_blank">蘑菇街</a></li>
+                    <li><a href="http://www.yoka.com/" target="_blank">YOKA</a></li>
+                    <li><a href="http://www.onlylady.com/" target="_blank">OnlyLady</a></li>
+                    <li><a href="http://www.vogue.com.cn/" target="_blank">VOGUE</a></li>
+                </ul>
+                <ul>
+                    <li>健康</li>
+                    <li><a href="http://health.sohu.com/" target="_blank">搜狐健康</a></li>
+                    <li><a href="http://health.sina.com.cn/" target="_blank">新浪健康</a></li>
+                    <li><a href="http://fashion.ifeng.com/health/" target="_blank">凤凰健康</a></li>
+                    <li><a href="http://www.xywy.com/" target="_blank">寻医问药</a></li>
+                    <li><a href="http://www.dxy.cn/" target="_blank">丁香园</a></li>
+                    <li><a href="http://www.39.net/" target="_blank">39健康网</a></li>
+                    <li><a href="http://www.120ask.com/" target="_blank">有问必答</a></li>
+                </ul>
+                <ul>
+                    <li>查询</li><li><a href="http://www.speedtest.net/" target="_blank">网速测试</a></li>
+                    <li><a href="http://www.114best.com/dh/" target="_blank">电话归属地</a></li>
+                    <li><a href="http://qq.ip138.com/train/" target="_blank">列车时刻</a></li>
+                    <li><a href="http://map.variflight.com/" target="_blank">实时航班</a></li>
+                    <li><a href="http://typhoon.zjwater.gov.cn/" target="_blank">台风路径</a></li>
+                    <li><a href="http://www.ip138.com/weizhang.htm" target="_blank">交通违章查询</a></li>
+                    <li><a href="http://www.b1bj.com/" target="_blank">比一比价</a></li>
+                </ul>
+            </div>
+
+            <!-- 技术 -->
+            <div class="nav-content">
+                <ul>
+                    <li>发现</li>
+                    <li><a href="https://www.v2ex.com/" target="_blank">V2EX</a></li>
+                    <li><a href="https://juejin.im/" target="_blank">掘金</a></li>
+                    <li><a href="https://www.oschina.net/" target="_blank">开源中国</a></li>
+                    <li><a href="https://www.csdn.net/" target="_blank">CSDN</a></li>
+                    <li><a href="http://www.infoq.com/cn/" target="_blank">InfoQ</a></li>
+                    <li><a href="http://next.36kr.com/" target="_blank">NEXT</a></li>
+                    <li><a href="https://news.ycombinator.com/" target="_blank">HackerNews</a></li>
+                </ul>
+                <ul>
+                    <li>数码</li><li>
+                    <a href="http://www.dgtle.com/" target="_blank">数字尾巴</a></li>
+                    <li><a href="https://www.ifanr.com/" target="_blank">爱范儿</a></li>
+                    <li><a href="https://www.leiphone.com/" target="_blank">雷锋网</a></li>
+                    <li><a href="http://www.geekpark.net/" target="_blank">极客公园</a></li>
+                    <li><a href="http://www.chinabyte.com/" target="_blank">比特网</a></li>
+                    <li><a href="http://www.zealer.com/" target="_blank">ZEALER</a></li>
+                    <li><a href="https://chinese.engadget.com/" target="_blank">Engadget</a></li>
+                </ul>
+                <ul>
+                    <li>平台</li>
+                    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                    <li><a href="https://coding.net/" target="_blank">Coding</a></li>
+                    <li><a href="https://shimo.im/" target="_blank">石墨</a></li>
+                    <li><a href="http://naotu.baidu.com/" target="_blank">百度脑图</a></li>
+                    <li><a href="https://www.zybuluo.com/mdeditor" target="_blank">CmdMarkdown</a></li>
+                    <li><a href="https://tinypng.com/" target="_blank">TinyPNG</a></li>
+                    <li><a href="https://sm.ms/" target="_blank">SM.MS 图床</a></li>
+                </ul>
+                <ul>
+                    <li>工具</li>
+                    <li><a href="https://www.ipip.net/ip.html" target="_blank">IP查询</a></li>
+                    <li><a href="http://www.speedtest.net/" target="_blank">Speedtest</a></li>
+                    <li><a href="https://www.17ce.com/" target="_blank">17CE</a></li>
+                    <li><a href="https://tool.lu/" target="_blank">在线工具</a></li>
+                    <li><a href="https://www.freeformatter.com/" target="_blank">代码格式化</a></li>
+                    <li><a href="https://www.moakt.com/" target="_blank">临时邮箱</a></li>
+                    <li><a href="https://www.domcomp.com/" target="_blank">域名比价</a></li>
+                </ul>
+                <ul>
+                    <li>文档</li>
+                    <li><a href="https://docs.microsoft.com/zh-cn/" target="_blank">Microsoft文档</a></li>
+                    <li><a href="https://developers.google.com/china/" target="_blank">Google开发者</a></li>
+                    <li><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN文档</a></li>
+                    <li><a href="http://www.w3school.com.cn/" target="_blank">W3school</a></li>
+                    <li><a href="http://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                    <li><a href="http://man.linuxde.net/" target="_blank">Linux命令</a></li>
+                    <li><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html" target="_blank">微信小程序</a></li>
+                </ul>
+                <ul>
+                    <li>博客</li><li><a href="http://www.aliued.cn/" target="_blank">阿里UED</a></li>
+                    <li><a href="https://tech.youzan.com/" target="_blank">有赞技术</a></li>
+                    <li><a href="http://jdc.jd.com/" target="_blank">京东JDC</a></li>
+                    <li><a href="http://www.alloyteam.com/" target="_blank">腾讯全端</a></li>
+                    <li><a href="http://ued.baidu.com/" target="_blank">百度UED</a></li>
+                    <li><a href="https://fed.renren.com/" target="_blank">人人网FED</a></li>
+                    <li><a href="http://www.ruanyifeng.com/" target="_blank">阮一峰博客</a></li>
+                </ul>
+                <ul>
+                    <li>资源</li>
+                    <li><a href="https://sspai.com/" target="_blank">少数派</a></li>
+                    <li><a href="https://www.iplaysoft.com/" target="_blank">异次元</a></li>
+                    <li><a href="https://en.softonic.com/" target="_blank">Softonic</a></li>
+                    <li><a href="http://macdownload.informer.com/" target="_blank">MacInformer</a></li>
+                    <li><a href="http://down.chinaz.com/" target="_blank">站长下载</a></li>
+                    <li><a href="http://mirrors.ustc.edu.cn/" target="_blank">中科大镜像</a></li>
+                    <li><a href="https://www.bootcdn.cn/" target="_blank">BootCDN</a></li>
+                </ul>
+                <ul>
+                    <li>云端</li><li><a href="https://www.aliyun.com/" target="_blank">阿里云</a></li>
+                    <li><a href="https://cloud.tencent.com/" target="_blank">腾讯云</a></li>
+                    <li><a href="https://aws.amazon.com/cn/" target="_blank">AWS</a></li>
+                    <li><a href="https://cloud.google.com/" target="_blank">GoogleCloud</a></li>
+                    <li><a href="https://www.linode.com/" target="_blank">Linode</a></li>
+                    <li><a href="https://www.digitalocean.com/" target="_blank">DigitalOcean</a></li>
+                    <li><a href="https://bandwagonhost.com/" target="_blank">Bandwagon</a></li>
+                </ul>
+            </div>
+
+            <!-- 设计 -->
+            <div class="nav-content">
+                <ul>
+                    <li>灵感</li>
+                    <li><a href="https://www.behance.net/" target="_blank">Behance</a></li>
+                    <li><a href="https://dribbble.com/" target="_blank">Dribbble</a></li>
+                    <li><a href="https://muz.li/" target="_blank">Muzli</a></li>
+                    <li><a href="https://www.mydesy.com/" target="_blank">MyDesy</a></li>
+                    <li><a href="http://www.zcool.com.cn/" target="_blank">ZCOOL</a></li>
+                    <li><a href="hhttps://thefwa.com/" target="_blank">FWA</a></li>
+                    <li><a href="https://land-book.com/" target="_blank">LandBook</a></li>
+                </ul>
+                <ul>
+                    <li>图库</li>
+                    <li><a href="http://huaban.com/" target="_blank">Huaban</a></li>
+                    <li><a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+                    <li><a href="https://pixabay.com/" target="_blank">Pixabay</a></li>
+                    <li><a href="https://500px.com/" target="_blank">500px</a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
+                    <li><a href="https://www.pexels.com/" target="_blank">PEXELS</a></li>
+                    <li><a href="https://www.splitshire.com/" target="_blank">SplitShire</a></li>
+                </ul>
+                <ul>
+                    <li>素材</li><li><a href="http://www.nipic.com/" target="_blank">NiPic</a></li>
+                    <li><a href="http://www.58pic.com/" target="_blank">58Pic</a></li>
+                    <li><a href="https://www.freepik.com/" target="_blank">freepik</a></li>
+                    <li><a href="http://www.uikit.me/" target="_blank">UIKit</a></li>
+                    <li><a href="https://www.pixeden.com/" target="_blank">Pixeden</a></li>
+                    <li><a href="http://subtlepatterns.com/" target="_blank">Subtlepatterns</a></li>
+                    <li><a href="http://www.fribbble.com/" target="_blank">Fribbble</a></li>
+                </ul>
+                <ul>
+                    <li>字体</li><li><a href="https://fontsup.com/" target="_blank">Fontsup</a></li>
+                    <li><a href="https://www.dafont.com/" target="_blank">dafont</a></li>
+                    <li><a href="http://www.qiuziti.com/" target="_blank">Qiuziti</a></li>
+                    <li><a href="https://www.myfonts.com/" target="_blank">MyFonts</a></li>
+                    <li><a href="https://zh.fonts2u.com/" target="_blank">Fonts2u</a></li>
+                    <li><a href="http://www.fontfabric.com/" target="_blank">Fontfabric</a></li>
+                    <li><a href="https://www.urbanfonts.com/" target="_blank">UrbanFonts</a></li>
+                </ul>
+                <ul>
+                    <li>交互</li>
+                    <li><a href="http://www.ui.cn/" target="_blank">UICN</a></li>
+                    <li><a href="https://sitesee.co/" target="_blank">SiteSee</a></li>
+                    <li><a href="https://uigarage.net/" target="_blank">UIGarage</a></li>
+                    <li><a href="https://bestwebsite.gallery/" target="_blank">BestWebsite</a></li>
+                    <li><a href="http://collectui.com/" target="_blank">CollectUI</a></li>
+                    <li><a href="https://uimovement.com/" target="_blank">UIMovement</a></li>
+                    <li><a href="https://reeoo.com/" target="_blank">Reeoo</a></li>
+                </ul>
+                <ul>
+                    <li>颜色</li>
+                    <li><a href="https://colorhunt.co/" target="_blank">ColorHunt</a></li>
+                    <li><a href="https://coolors.co/" target="_blank">Coolors</a></li>
+                    <li><a href="https://color.adobe.com/zh/" target="_blank">AdobeColor</a></li>
+                    <li><a href="https://webgradients.com/" target="_blank">WebGradients</a></li>
+                    <li><a href="https://trianglify.io/" target="_blank">Trianglify</a></li>
+                    <li><a href="http://www.colorfavs.com/" target="_blank">ColorFavs</a></li>
+                    <li><a href="http://colllor.com/" target="_blank">Colllor</a></li>
+                </ul>
+                <ul>
+                    <li>工具</li>
+                    <li><a href="https://www.fotor.com.cn/" target="_blank">Fotor</a></li>
+                    <li><a href="https://www.photopea.com/" target="_blank">Photopea</a></li>
+                    <li><a href="https://www.autodraw.com/" target="_blank">AutoDraw</a></li>
+                    <li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
+                    <li><a href="http://editor.method.ac/" target="_blank">SVG Draw</a></li>
+                    <li><a href="https://cloudconvert.com/" target="_blank">CloudConvert</a></li>
+                    <li><a href="https://tinypng.com/" target="_blank">TinyPNG</a></li>
+                </ul>
+                <ul>
+                    <li>规范</li>
+                    <li><a href="https://developer.apple.com/design/" target="_blank">Apple</a></li>
+                    <li><a href="https://design.google/" target="_blank">Google</a></li>
+                    <li><a href="https://www.microsoft.com/design/" target="_blank">Microsoft</a></li>
+                    <li><a href="https://material.io/" target="_blank">Material</a></li>
+                    <li><a href="https://developer.android.google.cn/design/" target="_blank">Android</a></li>
+                    <li><a href="http://screensiz.es/phone" target="_blank">ScreenSize</a></li>
+                    <li><a href="https://weui.io/" target="_blank">WeUI</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/main.js"></script>
+    </div>
+</body>
+</html>
