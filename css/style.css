@@ -68,7 +68,7 @@ body{
 }
 
 .search{
-    width: 80%;
+    width: 95%;
     height: 60px;
     margin: 20px auto;
     border-bottom: 3px solid #9900EA;
@@ -150,8 +150,8 @@ body{
     height: 30px;
     display: block;
     clear: both;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    display: flex;
     margin-bottom: 22px;
 }
 .nav .nav-content ul li{
